@@ -1,0 +1,37 @@
+POST http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Andres",
+    "email": "andres@prueba.com",
+    "password": "andres123",
+    "c_password": "andres123"
+}
+
+
+### login
+
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "andres@prueba.com",
+    "password": "andres123"
+}
+
+### Ingreso al perfil
+
+
+
+GET http://127.0.0.1:8000/api/v1/auth/perfil
+Accept: application/json
+Authorization: Bearer 3|1VC1aleK7Gjj92JKl3nmSIkHZFC5eLpSSM4iU1Fh,
+
+
+### Salir del perfil
+
+POST http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 3|1VC1aleK7Gjj92JKl3nmSIkHZFC5eLpSSM4iU1Fh,
