@@ -42,4 +42,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function persona(){
+        //Se realaciona con la tabla persona en este caso 1:1
+        return $this->hasOne(Persona::class);
+    }
 }

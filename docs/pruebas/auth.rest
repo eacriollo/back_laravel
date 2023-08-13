@@ -13,8 +13,8 @@ Content-Type: application/json
 ### login
 
 POST http://127.0.0.1:8000/api/v1/auth/login
-Accept: application/json
-Content-Type: application/json
+Accept: application/json,
+Content-Type: application/json,
 
 {
     "email": "andres@prueba.com",
@@ -26,12 +26,12 @@ Content-Type: application/json
 
 
 GET http://127.0.0.1:8000/api/v1/auth/perfil
-Accept: application/json
+Accept: application/json,
 Authorization: Bearer 3|1VC1aleK7Gjj92JKl3nmSIkHZFC5eLpSSM4iU1Fh,
 
 
 ### Salir del perfil
 
 POST http://127.0.0.1:8000/api/v1/auth/logout
-Accept: application/json
+Accept: application/json,
 Authorization: Bearer 3|1VC1aleK7Gjj92JKl3nmSIkHZFC5eLpSSM4iU1Fh,
